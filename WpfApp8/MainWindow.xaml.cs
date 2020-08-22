@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfApp8.DesignPattern;
 
 namespace WpfApp8
 {
@@ -35,8 +36,9 @@ namespace WpfApp8
 
         private void btnAdd1_Click(object sender, RoutedEventArgs e)
         {
-          
-
+            WeatherData weatherData = new WeatherData();
+            CurrentConditionsDisplay currentDisplay = new CurrentConditionsDisplay(weatherData);
+            weatherData.SetMeasurements(10, 20, 30);
         }
     }
 }
