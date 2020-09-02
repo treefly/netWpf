@@ -24,6 +24,7 @@ namespace WpfApp8
         public MainWindow()
         {
             InitializeComponent();
+            StartbuzzCoffee test = new StartbuzzCoffee();
         }
 
         private void btnAddLog_Click(object sender, RoutedEventArgs e)
